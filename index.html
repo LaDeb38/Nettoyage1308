@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="w-full">
+<!-- NavBar-->
+<nav class="">
+    <div class="  max-w-screen-2xl mx-auto">
+        <div class="flex justify-between">
+            <div class="flex space-x-4">
+             <!--Logo-->
+             <div class="">
+                <a href="#" class="flex w-auto h-auto py-2 px-3 pb-4 "> 
+                    <img src="logo.png" alt=" ">
+                </a>    
+             </div>
+            </div> 
+
+            <!--nav Contenu-->
+            <div class="hidden md:flex flex items-center spaxe-x-1 pt-3 ">
+                <a href="#service" class="py-5 px-3 font-semibold hover:text-gray-500 transition duration-300">Services</a>
+                <a href="#contact" class="py-5 px-3 font-semibold bg-cyan-300 rounded hover:text-gray-500 hover:bg-cyan-200 transition duration-300 ">Nous Contacter</a>
+            </div>
+
+            <!--Boutons menu mobile-->
+            <div class="mobile-menu-button md:hidden flex items-center pr-10 pt-3">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>  
+            </div>
+        </div>    
+    </div>
+    <!-- Menu Mobile-->
+    <div class="mobile-menu hidden md:hidden">
+        <a href="#service" class="block py-3 px-3 font-semibold text-sm hover:bg-cyan-300 hover:text-bold hover:text-white">Services</a>
+        <a href="#contact2" class="block py-3 px-3 font-semibold text-sm hover:bg-cyan-300 hover:text-bold hover:text-white">Nous Contacter</a>
+    </div>
+</nav>
+
+<!-- Bannière -->
+<div class="ban">
+    <div class="text-center py-44 text-2xl md:py-56 font-bold md:text-7xl  text-white drop-shadow-lg ">
+        <h1>Société de Nettoyage/Débarassage pour particuliers et professionels  </h1>
+    </div>
+    <div>
+        <h2 class="text-2xl text-white font-bold  drop-shadow-lg text-center ">Situé dans la région Grenobloise</h2>
+    </div>
+</div>
+<!-- Css pour la Bannière -->
+<style>
+    .ban{
+        background-image: url('g2.jpg') ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+</style>
+<!-- Code Js hamburger-->
+  <script>
+    //Les elements
+    const btn = document.querySelector('.mobile-menu-button');
+    const menu = document.querySelector('.mobile-menu');
+
+    //Les évenements à faire
+    btn.addEventListener("click",() => {
+        menu.classList.toggle("hidden");
+    });
+</script>
+
+
+<!-- Service -->
+<div id="service" class="text-center text-5xl  md:mx-auto font-semi my-32">
+    <h1> Les services proposés </h1>
+</div>
+<div  class="w-full h-auto flex flex-col  justify-center mt-32  " >
+
+    <div class =" w-11/12 mx-auto  ">
+        <div class="">
+            <img class="w-4/5 mx-auto" src="vitrine.jpg" alt="">
+        </div>
+        <div class="" >
+            <h2 class=" text-center font-semibold py-8 text-2xl" > Nettoyage de Vitres et Facades</h2>
+        </div>
+        <div class="mx-auto w-11/12 md:w-3/5 text-center text-lg">
+            <p>
+                Des petits carreaux aux immenses baies vitrées, Notre entreprise vous assure un nettoyage des vitres efficace.
+                Les agents d’entretien d'Ismo 1309 sont formés régulièrement pour travailler de façon appropriée,
+                 en toute discrétion, pour votre plus grand confort. 
+            </p>
+        </div>
+    </div>
+
+    <div class=" w-11/12 pt-16 mx-auto ">
+        <div class="">
+            <img class="w-4/5 mx-auto" src="chantier.jpg" alt="">
+        </div>
+        <div class="" >
+            <h2 class=" text-center font-semibold py-8 text-2xl" > Nettoyage/Débarassage de fin de Chantier</h2>
+        </div>
+        <div class="mx-auto w-11/12 md:w-3/5 text-center text-lg">
+            <p>
+                Lorsque des travaux sont effectués, de nombreux dégâts collatéraux apparaissent comme des déchets, de la salissure ou des gravats. 
+                La remise en état de fin de chantier est une étape importante de finalisation de travaux.
+                C’est pourquoi nos équipes sont là pour opérer un travail en profondeur pour une remise à neuf de votre lieu de travail.
+            </p>
+        </div>
+    </div>
+
+    <div class=" w-11/12 pt-16 mx-auto  ">
+        <div class="">
+            <img class="w-4/5 mx-auto" src="locaux.jpg" alt="">
+        </div>
+        <div class="" >
+            <h2 class=" text-center font-semibold py-8 text-2xl" > Nettoyage de Locaux professionels</h2>
+        </div>
+        <div>
+            <h2 class="text-center mx-auto w-11/12 md:w-3/5 font-semibold py-4 text-xl">
+                Bureaux
+                /Entreprises
+                /Commerces, magasins
+                /Centres commerciaux
+                /Surfaces de vente
+                /Restaurants, Cuisines
+                /Locaux de Santé
+            </h2>
+        </div>
+        <div class="mx-auto w-11/12 md:w-3/5 text-lg text-center">
+            <p> Nos équipes disposent de produits et techniques spécifiques pour nettoyer vos Locaux avec efficacité.
+                Le nettoyage de ceux-ci est ainsi particulièrement important pour la motivation et la productivité des salariés.
+                De plus, il a un impact considérable sur le confort au travail et sur l’image de l’entreprise auprès de ses clients.
+            </p>
+        </div>
+    </div>
+   
+</div>
+
+<!-- Contact pour mobile -->
+
+<div class="md:hidden">
+    <div id="contact2" class="text-center text-5xl font-semi mt-32 mb-16 mx-auto w-4/5 md:w-2/5   lg:w-1/5 border-b-2 pb-4 border-gray-800 ">
+        <h1> Contactez - Nous </h1>
+    </div> 
+
+    <div class="text-center text-3xl font-bold mb-16  ">
+        <h1 >E-mail : <a class="hover:text-gray-600" href="mailto:nettoyage1308@gmail.com">nettoyage1308@gmail.com</a> </h1>
+        <h1 class="pt-8">N° téléphone :  <a class="hover:text-gray-600" href="tel:+33789321805">07 89 32 18 05</a> </h1>
+    </div>
+</div>
+
+<!-- Contact pour ecran pc -->
+
+<div id="contact" class="text-center text-5xl font-semi mt-32 mb-16 mx-auto w-4/5 md:w-2/5   lg:w-1/5 border-b-2 pb-4 border-gray-800  invisible md:visible">
+    <h1> Contactez - Nous </h1>
+</div> 
+
+
+<div class="mr-64  invisible md:visible ">
+    <div class="text-center text-3xl font-bold mb-4 flex flex-row justify-center   ">
+        <a class href="mailto:nettoyage1308@gmail.com"><img class="w-1/5 mx-auto " src="mail.jpg.png" alt=""></a>
+        <h1 class="pt-8 w-96" >E-mail : <a class="hover:text-gray-600" href="mailto:nettoyage1308@gmail.com">nettoyage1308@gmail.com</a> </h1>
+    </div>
+
+    <div class="text-center text-3xl font-bold mb-16 flex flex-row justify-center">
+        <a  href="tel:+33789321805"><img class = "w-1/5 mx-auto" src="phone.jpg.png" alt=""></a>
+        <h1 class="pt-8 w-96">N° téléphone :  <a class="hover:text-gray-600" href="tel:+33789321805">07 89 32 18 05</a> </h1>
+    </div>
+</div>
+
+</body> 
+
+</html>
